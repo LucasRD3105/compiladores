@@ -6,18 +6,17 @@ This project is a **minimal compiler** implemented in **C** for a small, toy pro
 
 This repository is designed so that each part is **understandable and modular**, making it easy to extend with new features like conditionals, loops, and more complex operations.  
 
+⚠️ Note: Currently, the project functions as an interpreter. Future versions aim to evolve it into a full compiler capable of generating machine code or bytecode.
+
 ---
 
 ## Project Status
 
 ⚠️ **Work in Progress (WIP)**
 
-This project is **currently under development**. Features are incomplete, and the compiler is evolving.  
-Some parts (like the interpreter, semantic analysis, and optional extensions) are still being implemented.
-
-- The lexer, parser, and interpreter are functional for simple expressions and variable assignments.
-- More complex statements, loops, and advanced error handling are **not yet supported**.
-- Expect **frequent updates** and occasional **breaking changes**.
+This project is **currently under development**. While the interpreter is fully functional for simple expressions and variable assignments, many features are still planned, including:
+- More complex statements, loops, and advanced error handling.
+- Future compilation phases like code generation, optimization, and assembly output.
 
 ![status](https://img.shields.io/badge/status-in%20progress-yellow)
 
@@ -57,8 +56,8 @@ The compiler is divided into several key **phases**, each responsible for a spec
    - Converts the AST into something executable.  
    - In this project, we use an **interpreter** approach: the AST is traversed and executed directly, computing results and printing output.
 
-5. **(Optional Extensions)**  
-   - Future phases may include optimization, bytecode generation, or outputting assembly code.  
+5. **(Planned Extensions / Compilation)**  
+   - Future phases may include optimization, bytecode generation, or outputting assembly code, transforming the interpreter into a true compiler. 
 
 ---
 
