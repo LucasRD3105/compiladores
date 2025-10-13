@@ -15,9 +15,9 @@ This repository is designed so that each part is **understandable and modular**,
 This project is **currently under development**. Features are incomplete, and the compiler is evolving.  
 Some parts (like the interpreter, semantic analysis, and optional extensions) are still being implemented.
 
-- The lexer and parser are functional for simple expressions and variable assignments.
-- More complex statements, loops, and error handling are **not yet supported**.
-- Expect **frequent updates** and possible **breaking changes**.
+- The lexer, parser, and interpreter are functional for simple expressions and variable assignments.
+- More complex statements, loops, and advanced error handling are **not yet supported**.
+- Expect **frequent updates** and occasional **breaking changes**.
 
 ![status](https://img.shields.io/badge/status-in%20progress-yellow)
 
