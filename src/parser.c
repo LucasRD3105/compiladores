@@ -148,7 +148,8 @@ ASTNode* parse_expression(TokenList* tokens, int* pos) {
 
     current = tokens->tokens[*pos];
     while (current.type == T_PLUS || current.type == T_MINUS ||
-        current.type == T_MULT || current.type == T_DIV) {
+        current.type == T_MULT || current.type == T_DIV ||
+       current.type == T_MOD) {
 
         char op = 0;
         switch (current.type) {
@@ -156,6 +157,7 @@ ASTNode* parse_expression(TokenList* tokens, int* pos) {
             case T_MINUS: op = '-'; break;
             case T_MULT: op = '*'; break;
             case T_DIV: op = '/'; break;
+	    case T_MOD: op = '%'; break;
         }
         (*pos)++;
         ASTNode* right = parse_expression(tokens, pos);

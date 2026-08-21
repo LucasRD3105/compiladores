@@ -107,6 +107,7 @@ TokenList lex(const char* source) {
             case '*': list.tokens[list.count++] = create_token(T_MULT, 0, NULL); break;
             case '/': list.tokens[list.count++] = create_token(T_DIV, 0, NULL); break;
             case '=': list.tokens[list.count++] = create_token(T_EQUAL, 0, NULL); break;
+	    case '%': list.tokens[list.count++] = create_token(T_MOD, 0, NULL); break;
             case ';': list.tokens[list.count++] = create_token(T_SEMICOLON, 0, NULL); break;
             case '(': list.tokens[list.count++] = create_token(T_LPAREN, 0, NULL); break;
             case ')': list.tokens[list.count++] = create_token(T_RPAREN, 0, NULL); break;
@@ -137,6 +138,7 @@ void print_tokens(TokenList* list) {
             case T_IDENTIFIER: printf("IDENT(%s)\n", t.name); break;
             case T_EQUAL: printf("EQUAL\n"); break;
             case T_PRINT: printf("PRINT\n"); break;
+	    case T_MOD: printf("MOD\n"); break;
             case T_SEMICOLON: printf("SEMICOLON\n"); break;
             case T_EOF: printf("EOF\n"); break;
         }

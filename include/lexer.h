@@ -8,6 +8,7 @@
 typedef enum {
     T_NUMBER,      // numeric literal
     T_PLUS,        // '+'
+    T_MOD,         // '%'
     T_MINUS,       // '-'
     T_MULT,        // '*'
     T_DIV,         // '/'

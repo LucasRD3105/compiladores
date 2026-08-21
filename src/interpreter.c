@@ -82,6 +82,12 @@ int eval_expression(ASTNode* node, SymbolTable* table) {
                 case '+': return left_val + right_val;
                 case '-': return left_val - right_val;
                 case '*': return left_val * right_val;
+		case '%':
+                    if (right_val == 0) {
+                        printf("Runtime error: modulo by zero\n");
+                        exit(1);
+                    }
+                    return left_val % right_val;
                 case '/':
                     if (right_val == 0) { // protect against division by zero
                         printf("Runtime error: division by zero\n");
