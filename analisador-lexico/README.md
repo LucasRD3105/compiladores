@@ -118,7 +118,6 @@ Também foram utilizados testes adicionais com diferentes erros léxicos para ve
 
 ```text
 analisador-lexico/
-├── minilexer
 ├── minilexer.c
 ├── README.md
 ├── relatorio.pdf
